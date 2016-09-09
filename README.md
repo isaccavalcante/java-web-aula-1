@@ -4,9 +4,9 @@
 
 show databases;
 
-create database java_web_rd;
+create database web_rc;
 
-use java_web_rd;
+use web_rc;
 
 show tables;
 
