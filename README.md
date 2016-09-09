@@ -1,5 +1,7 @@
 # Aula 1
 
+Introdução
+
 -- criando banco de dados
 
 show databases;
