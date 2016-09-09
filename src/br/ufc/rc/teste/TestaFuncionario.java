@@ -14,24 +14,16 @@ public class TestaFuncionario {
 		func.setCargo("Dono ");
 		func.setSalario(12000.0);
 		
-		
-		
 		FuncionarioDAO fd = new FuncionarioDAO();
-		
 		
 		List<Funcionario> funcionarios = fd.listar();
 		
+		System.out.println("NOME\tCARGO\tSALARIO");
 		for (Funcionario f :funcionarios){
-			System.out.println(f.getNome()+"\t"+f.getCargo()+"\t"+f.getSalario());
-			
-			
+			System.out.println(f.getNome()+"\t"+f.getCargo()+"\t"+f.getSalario());	
 		}
 		
 		fd.inserir(func);
-		
-		
-		
-		
 	}
 
 }

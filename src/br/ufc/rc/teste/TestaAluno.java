@@ -8,17 +8,15 @@ import br.ufc.rc.model.Aluno;
 public class TestaAluno {
 	
 	public static void main(String[] args) {
-		
-		
-		
+	
 		AlunoDAO ad = new AlunoDAO();
 		
 		List<Aluno> alunos = ad.listar();
 		
-		System.out.println("ID\tNOME\tEMAIL\tIRA");
+		System.out.println("ID\tNOME\t");
 		
 		for (Aluno a: alunos){
-			System.out.println(a.getId()+"\t"+a.getNome()+"\t"+a.getEmail());
+			System.out.println(a.getId()+"\t"+a.getNome());
 		}
 		
 		}

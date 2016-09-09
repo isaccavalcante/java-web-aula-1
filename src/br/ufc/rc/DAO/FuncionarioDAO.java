@@ -17,7 +17,6 @@ public class FuncionarioDAO {
 		this.cf =  new ConnectionFactory();
 	}
 	
-	
 	public void inserir(Funcionario f){
 		
 		Connection c =this.cf.getConnection();
@@ -38,9 +37,7 @@ public class FuncionarioDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
+	
 	}
 	
 	public List<Funcionario> listar(){
@@ -61,8 +58,7 @@ public class FuncionarioDAO {
 				f.setNome(rs.getString("nome"));
 				f.setCargo(rs.getString("cargo"));
 				f.setSalario(rs.getDouble("salario"));
-				
-				
+							
 				funcionarios.add(f);
 				
 			}
