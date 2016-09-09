@@ -12,7 +12,7 @@ show tables;
 
 -- criando tabelas
 
-create table alunos( id BIGINT NOT NULL AUTO_INCREMENT, nome VARCHAR(255), email VARCHAR(255), ira DOUBLE, primary key(id)  );
+CREATE TABLE alunos( id BIGINT NOT NULL AUTO_INCREMENT, nome VARCHAR(255), email VARCHAR(255), ira DOUBLE, PRIMARY KEY(id)  );
 
 -- detalhes da tabela alunos
 
